@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+    <title>Parent</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+
+    <style>
+        img{
+            height: 550px;
+            width: 350px;
+        }
+        body{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    {% block body_block %}
+    <p class="btn btn-primary btn-rounded">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus architecto ab aperiam autem! Id tenetur quisquam, nesciunt architecto veniam sunt!</p>
+
+    <img src="../static/Images/image-1.jpeg" alt="">
+    {% endblock %}
+
+
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>

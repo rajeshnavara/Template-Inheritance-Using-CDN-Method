@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Note9.views import *
+from Note4.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('1/',Func1,name='Func1'),
     path('2/',Func2,name='Func2'),
+    path('a/',parent,name='parent'),
+    path('b/',child,name='child'),
 ]
